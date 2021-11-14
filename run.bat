@@ -1,1 +1,0 @@
-qemu-system-i386 -L "C:\Program Files\qemu" -monitor stdio -drive file=bootdisk.img,format=raw,if=floppy -soundhw pcspk
