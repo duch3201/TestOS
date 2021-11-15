@@ -1,11 +1,5 @@
 [bits 16]
 
-;	A FAZER
-
-;	continuar o gerenciador de memória aos poucos
-;	reescrever bootloader
-;	editor de texto	
-
 ;mapa de segmentos de memoria:
 ;0x0000 - até 0x500 não é utilizavel. após isso pode se utilizar
 ;0x1000 - kernel
@@ -2402,12 +2396,12 @@ interrupt_24:
 		iret
 
 
-inicio1: db "Bem vindo ao ",0
+inicio1: db "Welcome to ",0
 inicio2: db "MathOS",0
-inicio3: db "!",0xA,"Insira um arquivo para carregar ou 'listar' para listar arquivos no disco:",0
-sh_erro_nao_encontrado: db    "ERRO: Arquivo nao encontrado!",0
-sh_erro_arquivo_leitura: db   "ERRO: Falha na leitura!", 0
-sh_erro_arquivo_mem_cheia: db "ERRO: Memoria do sistema cheia!", 0
-sh_erro_desconhecido:      db "ERRO: Um erro desconhecido aconteceu!",  0
-sh_autoexec_erro_boot_cfg: db "Falha ao carregar BOOT.CFG!", 0xA, 0
+inicio3: db "!",0xA,"Insert the name of a file to be loaded or 'list' to list files on disk",0
+sh_erro_nao_encontrado: db    "ERROR: File not found!",0
+sh_erro_arquivo_leitura: db   "ERROR: Read error!", 0
+sh_erro_arquivo_mem_cheia: db "ERROR: System memory is full!", 0
+sh_erro_desconhecido:      db "ERROR: An unknown error happened!",  0
+sh_autoexec_erro_boot_cfg: db "Error loading BOOT.CFG!", 0xA, 0
 sh_autoexec_nome:	db "BOOT    CFG"

@@ -298,8 +298,8 @@ setoratual: dw 0
 
 arquivo: db "KERNEL  BIN", 0
 
-str_erro_leitura: db "Erro ao ler disco!", 0
-str_erro_nao_encontrado: db "Nao encontrado", 0 
+str_erro_leitura: db "Disk read error!", 0
+str_erro_nao_encontrado: db "Not found", 0 
 
 debug: dw 0
 
